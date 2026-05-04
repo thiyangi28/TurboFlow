@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboFlow | Hot Wheels Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar glass-panel">
+        <div class="nav-brand">
+            <i class="ri-fire-fill glow-icon"></i>
+            <span>TurboFlow</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-socials">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+        </div>
+    </nav>
+
+    <div class="background-elements">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <div class="logo-wrapper">
+                <i class="ri-fire-fill glow-icon"></i>
+                <h1>Turbo<span>Flow</span></h1>
+            </div>
+            <p>Your Ultimate Hot Wheels Collection Manager</p>
+        </header>
+
+        <section class="filters">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Muscle">Muscle</button>
+                <button class="filter-btn" data-filter="JDM">JDM</button>
+                <button class="filter-btn" data-filter="Exotic">Exotic</button>
+                <button class="filter-btn" data-filter="Fantasy">Fantasy</button>
+            </div>
+            <div class="controls">
+                <button id="addBtn" class="btn primary-btn">
+                    <i class="ri-add-line"></i> Add New Model
+                </button>
+            </div>
+        </section>
+
+        <div id="loader" class="loader">
+            <div class="spinner"></div>
+            <p>Loading Collection...</p>
+        </div>
+
+        <section id="hotwheels-grid" class="grid hidden">
+            <!-- Cards will be injected here -->
+        </section>
+    </main>
+
+    <!-- Contact & Footer Section -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class="ri-fire-fill glow-icon"></i>
+                <h2>Turbo<span>Flow</span></h2>
+                <p>The ultimate destination for Hot Wheels collectors. Keep track of your exotic, muscle, JDM, and fantasy collections in one premium dashboard.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Me</h3>
+                <p><i class="ri-mail-line"></i> hello@turboflow.com</p>
+                <p><i class="ri-map-pin-line"></i> Colombo, Sri Lanka</p>
+                <div class="footer-socials">
+                    <a href="#" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#" title="Facebook"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#" title="Twitter"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TurboFlow. Created with Express & MongoDB.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Add/Edit -->
+    <div id="modal" class="modal-overlay hidden">
+        <div class="modal-content glass-panel">
+            <div class="modal-header">
+                <h2 id="modal-title">Add Hot Wheel</h2>
+                <button id="closeModalBtn" class="icon-btn"><i class="ri-close-line"></i></button>
+            </div>
+            <form id="hotwheel-form">
+                <input type="hidden" id="hw-id">
+                <div class="input-group">
+                    <label for="hw-title">Model Name</label>
+                    <input type="text" id="hw-title" placeholder="e.g. Twin Mill" required autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="hw-author">Designer / Author</label>
+                    <input type="text" id="hw-author" placeholder="e.g. Ira Gilford" required autocomplete="off">
+                </div>
+                <div class="input-group">
+                    <label for="hw-category">Category</label>
+                    <select id="hw-category" required>
+                        <option value="Muscle">Muscle</option>
+                        <option value="JDM">JDM</option>
+                        <option value="Exotic">Exotic</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Uncategorized">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="hw-image">Image URL</label>
+                    <input type="text" id="hw-image" placeholder="e.g. /images/car.png" autocomplete="off">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" id="cancelBtn" class="btn secondary-btn">Cancel</button>
+                    <button type="submit" class="btn primary-btn">Save Model</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
