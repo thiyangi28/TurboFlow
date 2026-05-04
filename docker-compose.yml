@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo
+    container_name: turboflow_db
+    ports:
+      - "27017:27017"
+    volumes:
+      - hotwheels_data:/data/db
+
+volumes:
+  hotwheels_data:
