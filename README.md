@@ -1,5 +1,5 @@
 🏎️ TurboFlow: Hot Wheels POS System
-TurboFlow is a sleek, high-performance Point of Sale (POS) system designed for the fast-paced world of Hot Wheels retail. Experience a modern, glassmorphism-inspired interface paired with a robust, stateless backend for ultimate efficiency.
+TurboFlow is a specialized Point of Sale (POS) application for a Hot Wheels retail shop, built to demonstrate full-stack capabilities with Express.js, MongoDB, and Docker.
 ---
 
 ✨ Features
