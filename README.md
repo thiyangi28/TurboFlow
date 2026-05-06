@@ -1,31 +1,34 @@
 🏎️ TurboFlow: Hot Wheels POS System
-TurboFlow is a specialized Point of Sale (POS) application for a Hot Wheels retail shop, built to demonstrate full-stack capabilities with Express.js, MongoDB, and Docker.
 ---
+TurboFlow is a specialized Point of Sale (POS) application for a Hot Wheels retail shop, built to demonstrate full-stack capabilities with Express.js, MongoDB, and Docker.
 
 ✨ Features
-
+---
 ⚡ Seamless Inventory Management
 Full CRUD: Rapidly Create, Read, Update, and Delete car inventory.
 
 Real-time Tracking: Instant updates on stock levels and car specifications.
 
 Persistent Storage: Reliable data management powered by MongoDB.
----
+
 🛡️ Architecture & Security
+---
 Stateless Backend: Built with Express.js for scalable, high-speed performance.
 
 Dockerized Workflow: Fully containerized environment for consistent deployment.
 
 Optimized API: Clean RESTful endpoints for smooth frontend-backend communication.
----
+
 🎨 Premium User Experience
+---
 Modern UI: Clean, dark-themed design focused on usability.
 
 Responsive Layout: Fully functional across different screen sizes.
 
 Visual Inventory: Organized display of your Hot Wheels collection.
----
+
 🛠️ Technology Stack
+---
 Backend (Node.js)
 Framework: Express.js
 
@@ -40,9 +43,10 @@ Structure: HTML5
 
 Styling: CSS3 (Custom Glassmorphism)
 
-Logic: JavaScript (ES6+)
----
+Logic: JavaScript
+
 🚀 Getting Started
+---
 Prerequisites
 Docker Desktop (Recommended)
 
@@ -50,14 +54,14 @@ Node.js (For local development without Docker)
 
 Quick Start with Docker
 Clone the repository.
-
 Launch Docker Desktop.
-
 Spin up the entire stack:
---
 Bash
 docker-compose up --build
 Access the app at http://localhost:3000
----
+
 🎨 GUI
+---
 Built for speed. Optimized for collectors. 🏁
+<img width="1903" height="878" alt="Screenshot 2026-04-30 175112" src="https://github.com/user-attachments/assets/25f14568-53a4-4a61-8dc2-e3b2613e72d0" />
+
